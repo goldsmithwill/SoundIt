@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>soundIt Online Music Video Platform</title>
+<script src="soundIt.js"></script>
+<script src="visualizer.js"></script>
+<link rel="stylesheet" type="text/css" href="soundIt.css">
+</head>
+<body id="body">
+	<h1>soundIt</h1>
+	<div id="videoDiv">
+		<video autoplay controls src="videos/Bohemian/Bohemian.mp4"
+			width="480" height="360" id="video"></video>
+		<audio id="audio" src="videos/Bohemian/Bohemian.
+		mp3"></audio>
+
+	</div>
+	<form id="starForm">
+		<class id="stars"> <input type="image"
+			src="images/stars/blank_star.png" alt="the first star" id="1star"
+			onclick="highlightStar(1);return false;"> <input type="image"
+			src="images/stars/blank_star.png" alt="the second star" id="2star"
+			onclick="highlightStar(2);return false;"> <input type="image"
+			src="images/stars/blank_star.png" alt="the third star" id="3star"
+			onclick="highlightStar(3);return false;"> <input type="image"
+			src="images/stars/blank_star.png" alt="the fourth star" id="4star"
+			onclick="highlightStar(4);return false;"> <input type="image"
+			src="images/stars/blank_star.png" alt="the fifth star" id="5star"
+			onclick="highlightStar(5);return false;"> </class>
+	</form>
+
+	<div id="mp3_player">
+		<div id="audio_box"></div>
+		<canvas id="analyser_render"></canvas>
+	</div>
+
+	<p id="p"></p>
+</body>
+</html>
